@@ -13,6 +13,7 @@ import fire.workflowengine.DatasetType;
 import fire.workflowengine.Workflow;
 import fire.workflowengine.WorkflowContext;
 import org.apache.spark.api.java.JavaSparkContext;
+import org.apache.spark.sql.SparkSession;
 
 public class WorkflowTest {
 
@@ -20,8 +21,8 @@ public class WorkflowTest {
 
     public static void main(String[] args) {
 
-        // create spark context
-        JavaSparkContext ctx = CreateSparkContext.create(args);
+        // create spark session
+        SparkSession ctx = CreateSparkContext.createSession(args);;
         // create workflow context
         WorkflowContext workflowContext = new ConsoleWorkflowContext();
         // create job context

@@ -28,7 +28,7 @@ public class NodeTestPrintFirstNRows extends Node {
     public void execute(JobContext jobContext) throws Exception {
 
         // get the first n rows
-        Row[] rows = dataFrame.take(n);
+        Row[] rows = (Row[])dataFrame.take(n);
         if (rows == null || rows.length == 0)
             return;
 
