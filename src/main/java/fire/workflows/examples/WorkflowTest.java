@@ -57,7 +57,7 @@ public class WorkflowTest {
         wf.addLink(structured, filter);
 
         // print first 10 rows
-        NodeTestPrintFirstNRows printFirstNRows = new NodeTestPrintFirstNRows(3, "print first rows", 2);
+        NodeTestPrintFirstNRows printFirstNRows = new NodeTestPrintFirstNRows(3, "print first rows", 10);
         wf.addLink(filter, printFirstNRows);
 
         // execute the workflow
