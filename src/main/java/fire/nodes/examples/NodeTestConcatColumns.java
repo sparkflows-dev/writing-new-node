@@ -1,6 +1,7 @@
-package fire.nodes.etl;
+package fire.nodes.examples;
 
 import fire.context.JobContext;
+import fire.nodes.etl.NodeETL;
 import fire.workflowengine.FireSchema;
 import fire.workflowengine.Workflow;
 import org.apache.spark.sql.Column;

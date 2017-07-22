@@ -4,17 +4,13 @@ import fire.context.JobContext;
 import fire.context.JobContextImpl;
 import fire.nodes.dataset.NodeDatasetStructured;
 import fire.nodes.etl.NodeColumnFilter;
-import fire.nodes.etl.NodeTestConcatColumns;
+import fire.nodes.examples.NodeTestConcatColumns;
 import fire.nodes.examples.NodeTestPrintFirstNRows;
-import fire.nodes.util.NodePrintFirstNRows;
-import fire.nodes.save.NodeSaveParquet;
-import fire.fs.hdfs.Delete;
 import fire.spark.CreateSparkContext;
 import fire.workflowengine.ConsoleWorkflowContext;
 import fire.workflowengine.DatasetType;
 import fire.workflowengine.Workflow;
 import fire.workflowengine.WorkflowContext;
-import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.sql.SparkSession;
 
 public class WorkflowTest {
