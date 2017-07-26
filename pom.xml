@@ -59,6 +59,19 @@
       <version>${spark.version}</version>
     </dependency>
 
+    <dependency> <!-- Spark dependency -->
+      <groupId>org.apache.spark</groupId>
+      <artifactId>spark-mllib_2.11</artifactId>
+      <version>${spark.version}</version>
+      <!-- <scope>provided</scope> -->
+      <exclusions>
+        <exclusion>
+          <groupId>org.jpmml</groupId>
+          <artifactId>pmml-model</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
   </dependencies>
 
 
