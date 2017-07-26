@@ -41,7 +41,6 @@ public class NodeTestLogisticRegression extends NodePredictor implements Seriali
     public boolean fitIntercept; //Param for whether to fit an intercept term.
     public boolean standardization; //Param for whether to standardize the training features before fitting the model.
 
-    //@TODO: test all the parameters.
     public double elasticNetParam; //Param for the ElasticNet mixing parameter, in range [0, 1]. For alpha = 0, the penalty is an L2 penalty. For alpha = 1, it is an L1 penalty.
     public double tol; //convergence tolerance for iterative algorithms
 
