@@ -63,6 +63,7 @@ public class NodeTestPrintFirstNRows extends Node {
         outputTable.name = name;
         outputTable.title = "Row Values";
         outputTable.cellValues = values;
+        outputTable.resultType = Output.RESULTTYPE_DATA;
 
         // output to workflow context
         jobContext.workflowctx().outTable(this, outputTable);
