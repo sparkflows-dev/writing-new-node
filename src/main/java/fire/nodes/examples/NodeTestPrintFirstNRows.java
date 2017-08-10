@@ -1,6 +1,7 @@
 package fire.nodes.examples;
 
 import fire.context.JobContext;
+import fire.output.Output;
 import fire.output.OutputTable;
 import fire.workflowengine.Node;
 import org.apache.spark.sql.Row;
