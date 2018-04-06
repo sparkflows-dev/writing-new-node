@@ -18,7 +18,7 @@ This repo has a master branch and spark-2.x.
 
 Below is the contents of the directory.
 
-* **fire-core-1.4.3.jar**
+* **fire-core-2.1.0.jar**
     * fire core jar which contains the fire Nodes and Workflow engine
 * **data**
     * sample data files
@@ -41,7 +41,7 @@ Check out the code with : **git clone https://github.com/sparkflows/writing-new-
 
 Writing new Node depends on the Fire jar file. The Fire jar file provides the parent class for any new Node. Use the below commands to install the fire jar in your local maven repo.
 
-    mvn install:install-file -Dfile=fire-spark_2_1-core-1.4.3.jar -DgroupId=fire  -DartifactId=fire-spark_2_1-core  -Dversion=1.4.3 -Dpackaging=jar
+    mvn install:install-file -Dfile=fire-spark_2_1-core-2.1.0.jar -DgroupId=fire  -DartifactId=fire-spark_2_1-core  -Dversion=2.1.0 -Dpackaging=jar
     
 ### Build with Maven
 
