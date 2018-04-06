@@ -1,4 +1,4 @@
-# writing-new-node
+# Writing new Nodes/Processors for Fire
 
 This repository contains a sample Node based on which new nodes can be created. This Node can be placed in the sparkflows web server and executed.
 
