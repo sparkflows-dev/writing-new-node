@@ -46,19 +46,6 @@ Writing new Node depends on the Fire jar file. The Fire jar file provides the pa
 ### Build with Maven
 
     mvn package
-    
-## Developing with IntelliJ
-
-IntelliJ can be downloaded from https://www.jetbrains.com/idea/
-
-    Add the scala plugin into IntelliJ.
-    Import writing-new-node as a Maven project into IntelliJ.
-
-## Developing with Scala IDE for Eclipse
-
-Scala IDE for Eclipse can be downloaded from http://scala-ide.org/
-
-    Import fire-examples as a Maven project into Eclipse.
 
 # Running the workflow on a Spark Cluster
 
@@ -70,15 +57,15 @@ Below is the command to execute the example Workflow on a Spark cluster.
 
 Executors with 1G and 1 vcore each have been specified in the commands. The parameter **'cluster'** specifies that we are running the workflow on a cluster as against locally. This greatly simplifies the development and debugging within the IDE by setting its value to **'local'** or not specifying it.
 
-	spark-submit --class fire.workflows.examples.WorkflowTest --master yarn-client --executor-memory 1G  --num-executors 1  --executor-cores 1  target/writing-new-node-1.4.3-jar-with-dependencies.jar cluster
+	spark-submit --class fire.workflows.examples.WorkflowTest --master yarn-client --executor-memory 1G  --num-executors 1  --executor-cores 1  target/writing-new-node-2.1.0-jar-with-dependencies.jar cluster
 
 
 ## Jar files
 
 Building this repo generates the following jar files:
 
-	target/writing-new-node-1.4.3.jar
-	target/writing-new-node-1.4.3-jar-with-dependencies.jar
+	target/writing-new-node-2.1.0.jar
+	target/writing-new-node-2.1.0-jar-with-dependencies.jar
 
 The details for coding a New Node is here : https://github.com/sparkflows/writing-new-node/blob/master/CreatingNewNodes.md
 
@@ -87,7 +74,7 @@ The details for coding a New Node is here : https://github.com/sparkflows/writin
 
 New nodes written can be made visible in the Sparkflows UI. Thus, the users can start using them immediately.
 
-* Copy the **writing-new-node-1.4.3.jar** to **fire-lib** directory of the sparkflows install
+* Copy the **writing-new-node-2.1.0.jar** to **fire-lib** directory of the sparkflows install
 * Copy **testprintnrows.json** to the **nodes** directory under sparkflows install
 * Restart fire-ui
 * **TestPrintNRows** node would now be visible in the workflow editor window and you can start using it.
@@ -99,7 +86,7 @@ The workflow can be created from the Sparkflows user interface. Each workflow ha
 
 Below, the workflow is ExampleWorkflow.json
 
-	spark-submit --class fire.execute.WorkflowExecuteFromFile --master yarn-client --executor-memory 1G  --num-executors 1  --executor-cores 1  target/writing-new-node-1.4.3-jar-with-dependencies.jar --workflow-file ExampleWorkflow.json
+	spark-submit --class fire.execute.WorkflowExecuteFromFile --master yarn-client --executor-memory 1G  --num-executors 1  --executor-cores 1  target/writing-new-node-2.1.0-jar-with-dependencies.jar --workflow-file ExampleWorkflow.json
 
 ExampleWorkflow.json consists of 3 nodes:
 
