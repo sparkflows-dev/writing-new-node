@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <name>WritingNewNode</name>
   <description>Writing a new node in Sparkflows</description>
-  <version>2.1.0</version>
+  <version>3.1.0</version>
   <packaging>jar</packaging>
 
   <properties>
@@ -30,7 +30,7 @@
     <dependency>
       <groupId>fire</groupId>
       <artifactId>fire-spark_2_1-core</artifactId>
-      <version>2.1.0</version>
+      <version>3.1.0</version>
     </dependency>
 
     <dependency> <!-- Spark dependency -->
