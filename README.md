@@ -1,17 +1,12 @@
-# Writing new Nodes/Processors for Fire
+# Overview
 
-This repository contains a sample Node based on which new nodes can be created. This Node can be placed in the sparkflows web server and executed.
+Fire Insights allows you to write your own Node/Processors in Spark/Java/Scala and plug them into Fire Insights. They appear within the Fire Insights Workflow Editor and users can use them like any other Processor.
 
-For more examples on nodes in Sparkflows, refer:
+This repository contains a few sample Processors. New processors can be written similarly. The jar file for the new Processors can be placed in Fire and they can be used like any other Processor available in Fire.
+
+For more examples on writing nodes in Sparkflows, refer:
 
 - https://github.com/sparkflows/sparkflows-stanfordcorenlp
-
-# Spark 1.X / Spark 2.X
-
-This repo has a master branch and spark-2.x.
-
-- Master branch is for Spark 1.6.x
-- spark-2.x is for Spark 2.1.x
 
 
 ## Directory Contents
@@ -95,6 +90,10 @@ ExampleWorkflow.json consists of 3 nodes:
 * fire.nodes.etl.NodeFieldSplitter : Splits each line into columns c1,c2,c3,c4 using the comma as separator
 * fire.nodes.examples.NodeTestPrintFirstNRows : Prints the first 10 records of the dataset
 
+
+## Workflow
+
+<img src="https://github.com/sparkflows/writing-new-node/blob/master/docs/images/workflow.png"/>
 
 
 
